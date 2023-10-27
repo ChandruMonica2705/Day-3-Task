@@ -174,3 +174,8 @@ var age=32;
 *****
 *****
 
+=>P20.Calculate electricity bill?
+For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
+
+
+=>P21.Program To Calculate CGPA
