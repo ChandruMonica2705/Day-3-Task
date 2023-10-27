@@ -73,4 +73,104 @@ var age=32;
  console.log(answer);
 
  =>P4.Celsius to Fahrenheit conversion
+ var celsius=60;
+ var fahrenheit=((celsius * 9/5)+32);
+ console.log(fahrenheit);
+
+ =>P5.Meter to miles
+ var meter=1000000;
+ var miles=meter*0.00062137;
+ console.log(miles);
+
+ =>P6.Pounds to kg
+ var pounds=256;
+ var kg=pounds/2.2046;
+ console.log(kg);
+
+ =>P7.Calculate Batting Average
+ var runs=2000,matches=350,notout=50;
+ console.log(runs/(matches-notout));
+
+ =>P8.Calculate five test scores and print their average
+ var t1=50,t2=70,t3=90,t4=90,t5=100;
+ var average=((t1+t2+t3+t4+t5)/5);
+ console.log(average);
+
+ =>P9.Power of any number x ^ y.
+ var x=2;
+ var y=4;
+ var z=Math.pow(x,y);
+ console.log(z);
+
+ =>P10.Calculate Simple Interest
+ var p=5000;
+ var t=5;
+ var r=6;
+ var si=(p*t*r)/100;
+ console.log(si);
+
+ =>P11.Calculate area of an equilateral triangle
+ var a= 5;
+ var area = ( 1.73 * a*a) / 4
+ console.log(area);
  
+ =>P12.Area Of Isosceles Triangle
+ var b= 5;
+ var h=10;
+ var area =  (1 * b * h) / 2
+ console.log(area);
+
+ =>P13.Volume Of Sphere
+ var radius=10;
+ var volume=(4/3*Math.PI*Math.pow(radius,3));
+ console.log(volume);
+
+ =>P14.Volume Of Prism
+ var base=10;
+ var height=30;
+ var length=10;
+ var volume=(base*height*length);
+ console.log("Volume of Prism is",volume);
+
+ =>P15.Find area of a triangle.
+ var s1=5,s2=8,s3=7;
+ var s = (s1 + s2 + s3) / 2; 
+ var area = Math.sqrt(s * ((s - s1) * (s - s2) * (s - s3)));
+ console.log(area);
+
+ =>P16.Give the Actual cost and Sold cost, Calculate Discount Of Product
+  var actualcost=5000;
+  var soldcost=4000;
+  var discount=actualcost-soldcost;
+  console.log(discount);
+
+  =>P17.Given their radius of a circle and find its diameter, circumference and area.
+   var radius=5;
+   var circumference=2*Math.PI*r;
+   var diameter=2*r;
+   vae area=Math.PI**r;
+   console.log("circumference",circumference);
+   console.log("diameter",diameter);
+   console.log("area",area);
+
+   =>P18.Given two numbers and perform all arithmetic operations.
+   var a=5;
+   var b=10;
+   var add=a+b;
+   var sub=a-b;
+   var mul=a*b;
+   var div=a/b;
+   var mod=a%b;
+   console.log("Addition",add);
+   console.log("Subtraction",sub);
+   console.log("Multiplication",mul);
+   console.log("Division",div);
+   console.log("Modulus",mod);
+
+   =>P19.Display the asterisk pattern as shown below(No loop needed):
+*****
+*****
+*****
+*****
+*****
+
