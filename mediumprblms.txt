@@ -12,7 +12,7 @@ console.log(d);
 =>Q2.How to get value of the variable myvar as output
 var myvar= 1;
 console.log("myvar");
-Ans:variable name is declared in string by using " ".
+Ans:variable name is declared in string by using " ".so it returns string only.
 without using " ",we can get the output.
 var myvar= 1;
 console.log(myvar);
@@ -208,6 +208,8 @@ for(var stringArray of strArray)
       console.log(stringArray);
 
 =>Q3.var myarray=[11,22,33,44,55].write a code to count the elements in the array 
+     var elements=myarray.length;
+     console.log(elements);
 
 =>Q4.Declare an empty array.
      var array=[];
@@ -230,7 +232,6 @@ console.log(friends)
 
 //dataHandling(friends);
 
-— — — — — — — — — — — — — — — -
 =>Q7.Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica.
 
 const friends = [
@@ -250,8 +251,7 @@ for (var i = 0; i < input.length; i++) {
 
 dataHandling(friends);
 
-— — — — — — — — — — — — — — — -
-Find the person is ur friend or not.
+=>Find the person is ur friend or not.
 
 const friends = [
 “Mari”,
@@ -264,7 +264,7 @@ const friends = [
 
 function dataHandling(input, name){
 for (var i = 0; i < input.length; i++) {
-
+ if
 }
 }
 
@@ -272,9 +272,7 @@ let found = dataHandling(friends,”Jeff”);
 
 console.log(found);
 
-— — — — — — — — — — — — — — — -
-We have two lists of friends below. Use array methods to combine them into one alphabetically-sorted list.
-
+=>We have two lists of friends below. Use array methods to combine them into one alphabetically-sorted list.
 var friends1 = [
 “Mari”,
 “MaryJane”,
@@ -283,7 +281,6 @@ var friends1 = [
 “Jeff”,
 “AAK chandran”
 ];
-
 var friends2 = [
 “Gabbar”,
 “Rajinikanth”,
@@ -292,17 +289,27 @@ var friends2 = [
 “Jeff”,
 “ET”
 ];
-
 function dataHandling(input){
 //Your code goes here
+console.log(friends1.concat(friends2).sort())
 }
-
 dataHandling(friends);
+OUTPUT:[ 'AAK chandran','CaptianAmerica','ET','Gabbar','Jeff','Jeff','Mari','MaryJane','Mass','Munnabai','Rajinikanth','Spiderman' ]
 
-— — — — — — — — — — — — — — — -
+=>1.Get the first item, the middle item and the last item of the array
+ var first=friends[0];//first item
 
-Get the first item, the middle item and the last item of the array
+ var last=friends[friends.length-1];//last item
+
 2. Add your name to the end of the friends array, and add another name to beginning.
+const friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+//Adding my name to the end
+const friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+friends.push("Moni");
+console.log(friends);
+//Adding another name to beginning
+console.log(friends.unshift(chandru));
+console.log(friends);
 
 3. Add Mr or Ms to the names in the friends array.
 
@@ -318,59 +325,59 @@ Get the first item, the middle item and the last item of the array
 
 9. Find the name with min characters and return the name.
 
-— — — — — — — — — — — — — — — -
 
-Find the average in the array below.
+=>Find the average in the array below.
 Make sure you add only the numbers and do avg.
+const friendsInfo = [6, 12, "Mari", 1, true, "Munnabai", 200, "CaptianAmerica", 8, 10];
+var sum=friendsInfo[0]+friendsInfo[1]+friendsInfo[3]+friendsInfo[6]+friendsInfo[8]+friendsInfo[9];
+var average=sum/6;
+console.log(average);
 
-const friendsInfo = [6, 12, ‘Mari’, 1, true, ‘Munnabai’, ‘200’, ‘CaptianAmerica’, 8, 10];
-
-— — — — — — — — — — — — — — — -
-Print the contents of the input variable
-
+=>Print the contents of the input variable
 var input = [
-[“0001”, “Roman Alamsyah”, “Bandar Lampung”, “21/05/1989”, “Membaca”],
-[“0002”, “Dika Sembiring”, “Medan”, “10/10/1992”, “Bermain Gitar”],
-[“0003”, “Winona”, “Ambon”, “25/12/1965”, “Memasak”],
-[“0004”, “Bintang Senjaya”, “Martapura”, “6/4/1970”, “Berkebun”]
+["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"],
+["0002", "Dika Sembiring", "Medan", "10/10/1992", "Bermain Gitar"],
+["0003", "Winona", "Ambon", "25/12/1965", "Memasak"],
+["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
 ]
-
 function dataHandling(input){
 for (var i = 0; i < input.length; i++) {
 //Your code goes here
-
+console.log(input[i]);
 }
 }
-
 dataHandling(input);
 
-— — — — — — — — — — — — — — — -
 
-Objects:
+==>Objects:
 
-What the output
-
-myobject = {1:one,”11":1,”name”:”arun”}
+=>Q1.What the output
+myobject = {1:one,11:1,”name”:”arun”}
 console.log(myobject.11); 
-console.log(myobject.name);
-Add a new key value pair to myobject
+console.log(myobject."name");
+        Output will be:1
+                       arun
+
+=>Q2.Add a new key value pair to myobject
 key : ten
 value : ten
-
-myobject = {1:one,”11":1,”name”:”arun”}
-//your code goes here
+myobject = {1:"one",11:1,”name”:”arun”}
+myobject.ten="ten"
 console.log(myobject);
-{"1":"one","11":1,"name":"arun","ten":"ten"} // Quotes might not get displayed that fine.
-Write out an object literal to represent the data below.
+{1:"one",11:1,"name":"arun",ten:"ten"} // Quotes might not get displayed that fine.
 
+=>Q3.Write out an object literal to represent the data below.
 Guvi, Geek, 6, IIT-M RP,Chennai.
+  var objname={firstname:"Guvi",lastname:"Geek",number:6,address:"IIT-M RP",region:"Chennai"};
 
-— — — — — — — — — — — — — — — -
-
-How would you represent the following data using a combination of object literals and arrays? (You can describe a strategy without typing or writing out the whole thing.)
-
+=>Q4.How would you represent the following data using a combination of object literals and arrays? (You can describe a strategy without typing or writing out the whole thing.)
 Guvi, Geek, 6, IIT-M RP,Chennai.
 Amazon, Inc, 31, SP Infocity, Chennai.
 Google, Alphabet, 34 Amphitheater Parkway, MountainView.
 Tesla, Inc , 32, 333 Santana Row,San Jose.
+   var objname=[{firstname:"Guvi",lastname:"Geek",number:6,address:"IIT-M RP",region:"Chennai"},
+                {firstname:"Amazon",lastname:"Inc",number:31,address:"SP Infocity",region:"Chennai"},
+           { ...},{... }];
+                
+
 
