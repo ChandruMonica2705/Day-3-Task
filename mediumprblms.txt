@@ -1,3 +1,4 @@
+TASK 1:-
 =>Q1.Declare four variables without assigning values and print them in console
 var a;
 var b;
@@ -49,7 +50,7 @@ var age=32;
       false, zero, empty, null, undefined, or Nan
    Truthy:-
        not zero,non-empty string, an array, or an object.
-
+TASK 2:-
  SIMPLE PROGRAMS:-
 
  =>P1.Square of a number
@@ -179,3 +180,196 @@ For example, a consumer consumes 100 watts per hour daily for one month. Calcula
 
 
 =>P21.Program To Calculate CGPA
+
+
+TASK 3:-
+=>Q1.Write a loop that makes seven calls to console.log to output the following triangle:
+#
+##
+###
+####
+#####
+######
+#######
+
+=>Q2.2. Iterate through the string array and print it contents
+       var strArray= ["<option>Jazz</option>",
+      ,"<option>Blues</option>",
+      ,"<option>New Age</option>",
+      ,"<option>Classical</option>",
+      ,"<option>Opera</option>"]
+
+var strArray= ["<option>Jazz</option>",
+      ,"<option>Blues</option>",
+      ,"<option>New Age</option>",
+      ,"<option>Classical</option>",
+      ,"<option>Opera</option>"]
+for(var stringArray of strArray)
+      console.log(stringArray);
+
+=>Q3.var myarray=[11,22,33,44,55].write a code to count the elements in the array 
+
+=>Q4.Declare an empty array.
+     var array=[];
+
+=>Q5.Create an array called foods holds the names of your top 20 favorite foods, starting with the best food.
+Foods variable holds the names of your top 20 favorite foods, starting with the best food. How can you find your fifth favorite food?
+let foods=["briyani","fish fry","chicken stew","mutton fry","idly","dosa","chapati","poori","upma","sambar","chutney","masala","roti","potato fries","salads","juices","soups","cofee","tea","sandwich"]
+console.log(foods[4]);
+=>Find the length of your foods array
+console.log(foods.length);
+
+=>Q6.Starting from the existing friends variable below, change the element that is currently “Mari” to “Munnabai”.
+let friends = [“Mari”,“MaryJane”,“CaptianAmerica”,“Munnabai”,“Jeff”,“AAK chandran”];
+function dataHandling(input){
+for (var i = 0; i < input.length; i++) {
+
+}
+}
+
+dataHandling(friends);
+
+— — — — — — — — — — — — — — — -
+Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica.
+
+const friends = [
+“Mari”,
+“MaryJane”,
+“CaptianAmerica”,
+“Munnabai”,
+“Jeff”,
+“AAK chandran”
+];
+
+function dataHandling(input){
+for (var i = 0; i < input.length; i++) {
+
+}
+}
+
+dataHandling(friends);
+
+— — — — — — — — — — — — — — — -
+Find the person is ur friend or not.
+
+const friends = [
+“Mari”,
+“MaryJane”,
+“CaptianAmerica”,
+“Munnabai”,
+“Jeff”,
+“AAK chandran”
+];
+
+function dataHandling(input, name){
+for (var i = 0; i < input.length; i++) {
+
+}
+}
+
+let found = dataHandling(friends,”Jeff”);
+
+console.log(found);
+
+— — — — — — — — — — — — — — — -
+We have two lists of friends below. Use array methods to combine them into one alphabetically-sorted list.
+
+var friends1 = [
+“Mari”,
+“MaryJane”,
+“CaptianAmerica”,
+“Munnabai”,
+“Jeff”,
+“AAK chandran”
+];
+
+var friends2 = [
+“Gabbar”,
+“Rajinikanth”,
+“Mass”,
+“Spiderman”,
+“Jeff”,
+“ET”
+];
+
+function dataHandling(input){
+//Your code goes here
+}
+
+dataHandling(friends);
+
+— — — — — — — — — — — — — — — -
+
+Get the first item, the middle item and the last item of the array
+2. Add your name to the end of the friends array, and add another name to beginning.
+
+3. Add Mr or Ms to the names in the friends array.
+
+4. Concat all the names the friends array and return as comma “,” seperated string.
+
+5. Find the friends names who has letter ‘a’ and return the list.
+
+6. Find the avg length of all the friends names. Get the individual length of the names and do the avg.
+
+7. Find the names and return the list starting with letter M.
+
+8. Find the name with max characters and return the name.
+
+9. Find the name with min characters and return the name.
+
+— — — — — — — — — — — — — — — -
+
+Find the average in the array below.
+Make sure you add only the numbers and do avg.
+
+const friendsInfo = [6, 12, ‘Mari’, 1, true, ‘Munnabai’, ‘200’, ‘CaptianAmerica’, 8, 10];
+
+— — — — — — — — — — — — — — — -
+Print the contents of the input variable
+
+var input = [
+[“0001”, “Roman Alamsyah”, “Bandar Lampung”, “21/05/1989”, “Membaca”],
+[“0002”, “Dika Sembiring”, “Medan”, “10/10/1992”, “Bermain Gitar”],
+[“0003”, “Winona”, “Ambon”, “25/12/1965”, “Memasak”],
+[“0004”, “Bintang Senjaya”, “Martapura”, “6/4/1970”, “Berkebun”]
+]
+
+function dataHandling(input){
+for (var i = 0; i < input.length; i++) {
+//Your code goes here
+
+}
+}
+
+dataHandling(input);
+
+— — — — — — — — — — — — — — — -
+
+Objects:
+
+What the output
+
+myobject = {1:one,”11":1,”name”:”arun”}
+console.log(myobject.11); 
+console.log(myobject.name);
+Add a new key value pair to myobject
+key : ten
+value : ten
+
+myobject = {1:one,”11":1,”name”:”arun”}
+//your code goes here
+console.log(myobject);
+{"1":"one","11":1,"name":"arun","ten":"ten"} // Quotes might not get displayed that fine.
+Write out an object literal to represent the data below.
+
+Guvi, Geek, 6, IIT-M RP,Chennai.
+
+— — — — — — — — — — — — — — — -
+
+How would you represent the following data using a combination of object literals and arrays? (You can describe a strategy without typing or writing out the whole thing.)
+
+Guvi, Geek, 6, IIT-M RP,Chennai.
+Amazon, Inc, 31, SP Infocity, Chennai.
+Google, Alphabet, 34 Amphitheater Parkway, MountainView.
+Tesla, Inc , 32, 333 Santana Row,San Jose.
+
