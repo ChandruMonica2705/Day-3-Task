@@ -174,6 +174,8 @@ TASK 2:-
 *****
 *****
 *****
+const pattern = '*****\n'.repeat(5);
+console.log(pattern);
 
 =>P20.Calculate electricity bill?
 For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
@@ -191,6 +193,11 @@ TASK 3:-
 #####
 ######
 #######
+let triangle = "";
+for (let i = 0; i < 7; i++) {
+  triangle += "#";
+  console.log(triangle);
+}
 
 =>Q2.2. Iterate through the string array and print it contents
        var strArray= ["<option>Jazz</option>",
@@ -222,55 +229,33 @@ console.log(foods[4]);
 console.log(foods.length);
 
 =>Q6.Starting from the existing friends variable below, change the element that is currently “Mari” to “Munnabai”.
-let friends = [“Mari”,“MaryJane”,“CaptianAmerica”,“Munnabai”,“Jeff”,“AAK chandran”];
-//function dataHandling(input){
-//for (var i = 0; i < input.length; i++) {
-friends.splice(0,1,“Munnabai”)
-}
+let friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+friends.splice(0,1,"Munnabai")
 console.log(friends)
-}
-
-//dataHandling(friends);
 
 =>Q7.Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica.
-
 const friends = [
-“Mari”,
-“MaryJane”,
-“CaptianAmerica”,
-“Munnabai”,
-“Jeff”,
-“AAK chandran”
+"Mari",
+"MaryJane",
+"CaptianAmerica",
+"Munnabai",
+"Jeff",
+"AAK chandran"
 ];
-
-function dataHandling(input){
-for (var i = 0; i < input.length; i++) {
-
-}
-}
-
-dataHandling(friends);
+for (var i = 0; i<=2; i++) 
+console.log(friends[i]);
 
 =>Find the person is ur friend or not.
-
 const friends = [
-“Mari”,
-“MaryJane”,
-“CaptianAmerica”,
-“Munnabai”,
-“Jeff”,
-“AAK chandran”
+"Mari",
+"MaryJane",
+"CaptianAmerica",
+"Munnabai",
+"Jeff",
+"AAK chandran"
 ];
-
-function dataHandling(input, name){
-for (var i = 0; i < input.length; i++) {
- if
-}
-}
-
-let found = dataHandling(friends,”Jeff”);
-
-console.log(found);
+console.log(friends.includes("mari"));
+console.log(friends.includes("Mari"));
 
 =>We have two lists of friends below. Use array methods to combine them into one alphabetically-sorted list.
 var friends1 = [
@@ -289,17 +274,13 @@ var friends2 = [
 “Jeff”,
 “ET”
 ];
-function dataHandling(input){
-//Your code goes here
 console.log(friends1.concat(friends2).sort())
-}
-dataHandling(friends);
 OUTPUT:[ 'AAK chandran','CaptianAmerica','ET','Gabbar','Jeff','Jeff','Mari','MaryJane','Mass','Munnabai','Rajinikanth','Spiderman' ]
 
 =>1.Get the first item, the middle item and the last item of the array
- var first=friends[0];//first item
-
- var last=friends[friends.length-1];//last item
+ console.log(friends[0]);//first item
+console.log(friends[friends.length / 2]);//middle item
+console.log(friends[friends.length-1]);//last item
 
 2. Add your name to the end of the friends array, and add another name to beginning.
 const friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
@@ -312,10 +293,21 @@ console.log(friends.unshift(chandru));
 console.log(friends);
 
 3. Add Mr or Ms to the names in the friends array.
+const friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+var res1=[];
+for(var i=0;i<arr1.length;i++)
+{
+    res1.push(arr1[i]+"Ms");
+}
+console.log(res1);
 
-4. Concat all the names the friends array and return as comma “,” seperated string.
+4. Concat all the names the friends array and return as comma "," seperated string.
+const friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+console.log((friends.join(",")));
 
 5. Find the friends names who has letter ‘a’ and return the list.
+const friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+console.log(friends.filter((friends) => friends.includes('a')));
 
 6. Find the avg length of all the friends names. Get the individual length of the names and do the avg.
 
