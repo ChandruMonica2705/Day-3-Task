@@ -30,13 +30,4 @@ request1.onload = function(){
     
 }
 
-const friends = ["Mari","MaryJane","CaptianAmerica","Jeff","Munnabai","AAK chandran"];
-let friend1=[];
-for(var i=0;i<=friends.length;i++)
-{
-  if (friends[i].includes("a")){
-    friend1.push(friends[i]);
-  }
-console.log(friend1);
-}
 
